@@ -11,6 +11,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 
 var routes = require('./routes/index');
+var api = require('./routes/api');
 var app = express();
 
 // view engine setup
@@ -26,5 +27,6 @@ app.use(express.static(path.join(__dirname, 'bower_components'), { maxAge: oneDa
 app.use(express.static(path.join(__dirname, 'public'), { maxAge: oneDay }));
 
 app.use('/', routes);
+app.use('/api', api);
 
 module.exports = app;

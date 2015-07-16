@@ -10,7 +10,8 @@
     "jade": "*",
     "body-parser": "*",
     "debug": "*",
-    "bower": "*"
+    "bower": "*",
+    "scb-core": "git+https://github.com/SmallCloudBackup/scb-core"
   },
   "scripts": {
     "postinstall": "bower install"

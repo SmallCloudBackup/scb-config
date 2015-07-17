@@ -11,7 +11,8 @@
     "body-parser": "*",
     "debug": "*",
     "bower": "*",
-    "scb-core": "git+https://github.com/SmallCloudBackup/scb-core"
+    "scb-core": "git+https://github.com/SmallCloudBackup/scb-core",
+    "scb-asana": "git+https://github.com/SmallCloudBackup/scb-asana"
   },
   "scripts": {
     "postinstall": "bower install"

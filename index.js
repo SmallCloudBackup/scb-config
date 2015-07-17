@@ -15,7 +15,7 @@ var api = require('./routes/api');
 var app = express();
 
 var configModules = {};
-var configRoots = ["views"];
+var configRoots = [path.join(__dirname, "views")];
 
 // a bit of voodoo to list SCB modules
 var scbSkipModules = {"scb-core": true, "scb-scheduler": true, "scb-backuper": true };

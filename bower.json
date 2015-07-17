@@ -1,6 +1,7 @@
 {
-  "name": "Small Cloud Backup - Configuration app",  
+  "name": "Small Cloud Backup - Configuration app",
   "dependencies": {
-    "bootstrap": "*"
+    "bootstrap": "*",
+    "handlebars": "*"
   }
 }

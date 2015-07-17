@@ -1,14 +1,14 @@
 extends layout
 
 mixin title
-  title Small Cloud Backup - Service configuration
+  title Small Cloud Backup - Source configuration
 
 block content
-  .content-fluid#serviceContainer
+  .content-fluid#sourcesContainer
 
 block bottomJs
-  script(src="/scb-config/service-all.js")
-  script#services(type="text/x-handlebars-template")
+  script(src="/scb-config/source-all.js")
+  script#sources(type="text/x-handlebars-template")
     |<div class="row">
     |{{#each objects}}
     | <div id='{{_id}}' class='column col-lg-3'>
@@ -17,7 +17,7 @@ block bottomJs
     |     <div class="panel-body">
     |       <table class="table">
     |         <tr><td>Type:</td><td>{{type}}</td></tr>
-    |         <tr><td>Connection string:</td><td>{{connectionString}}</td></tr>
+    |         <tr><td>Service:</td><td>{{serviceRef.name}} / {{serviceRef.type}}</td></tr>
     |       </table>
     |     </div>
     |     <div class="panel-footer">

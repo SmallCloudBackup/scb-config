@@ -1,6 +1,10 @@
-doctype html
-html
-  head
-    title Service configuration
-  body
-    block serviceConfig
+extends layout
+
+mixin title
+  +serviceTitle
+
+block content
+  block serviceConfig
+
+block bottomJs
+  block serviceBottomJs

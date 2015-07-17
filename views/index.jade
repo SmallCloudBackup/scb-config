@@ -1,16 +1,13 @@
-doctype html
-html
-  head
-    title Small Cloud Backup - Configuration
-    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.min.css')    
-  body
-    .container
-      .container-fluid
-        .jumbotron
-          h1 Small Cloud Backup
-          p Small Cloud Backup solution is up and running on your Heroku instance.
-          p This web application is used to configure the backup settings.
-          .alert.alert-danger
-            h2 Please make sure that once configuration is complete you #[strong stop] this application.
-    script(src='/jquery/dist/jquery.min.js')
-    script(src='/bootstrap/dist/js/bootstrap.min.js')
+extends layout
+
+mixin title
+  title Small Cloud Backup - Configuration
+
+block content
+  .container-fluid
+    .jumbotron
+      h1 Small Cloud Backup
+      p Small Cloud Backup solution is up and running on your Heroku instance.
+      p This web application is used to configure the backup settings.
+      .alert.alert-danger
+        h2 Please make sure that once configuration is complete you #[strong stop] this application.

@@ -2,6 +2,7 @@
   "name": "Small Cloud Backup - Configuration app",
   "dependencies": {
     "bootstrap": "*",
-    "handlebars": "*"
+    "handlebars": "*",
+    "x-editable": "~1.5.1"
   }
 }
